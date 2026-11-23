@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>QuantaForge – Premium Minecraft Hosting</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+body{font-family:Inter,sans-serif;background:#0B0F19;color:#CBD5E1;background-image:radial-gradient(circle at 15% 0,#00A3FF22,transparent 40%),radial-gradient(circle at 95% 35%,#6d28d91f,transparent 40%);background-attachment:fixed}
+h1,h2,h3,.hd{font-family:'Space Grotesk',Inter,sans-serif}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+.fl{animation:fl 5s ease-in-out infinite}
+.gridbg{background-image:linear-gradient(#ffffff0d 1px,transparent 1px),linear-gradient(90deg,#ffffff0d 1px,transparent 1px);background-size:44px 44px;-webkit-mask-image:radial-gradient(ellipse at 50% 30%,#000 25%,transparent 75%);mask-image:radial-gradient(ellipse at 50% 30%,#000 25%,transparent 75%)}
+html{scroll-behavior:smooth}
+.scene{perspective:600px}
+.cube{position:relative;transform-style:preserve-3d;animation:spin 9s linear infinite}
+.face{position:absolute;inset:0;background-size:100% 100%;image-rendering:pixelated;box-shadow:inset 0 0 0 1px #0004}
+@keyframes spin{from{transform:rotateX(-24deg) rotateY(0)}to{transform:rotateX(-24deg) rotateY(360deg)}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+.bob{animation:bob 3s ease-in-out infinite}
+.group:hover .cube{animation-duration:3s}
+@media print{.noprint,header,footer{display:none!important}body{background:#fff!important}}
+</style>
+</head>
+<body><div id="root"></div><script type="module" src="/main.jsx"></script></body>
+</html>
